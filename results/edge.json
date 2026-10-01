@@ -1,0 +1,42 @@
+{
+ "mfcc_lr": {
+  "p50_ms": 3.55,
+  "p95_ms": 4.22,
+  "params": 8050
+ },
+ "cnn_torch": {
+  "p50_ms": 4.44,
+  "p95_ms": 5.44,
+  "params": 103842
+ },
+ "cnn_onnx_fp32": {
+  "p50_ms": 2.04,
+  "p95_ms": 2.33,
+  "bytes": 417371,
+  "fold1_acc": 0.7225
+ },
+ "cnn_onnx_int8": {
+  "p50_ms": 14.22,
+  "p95_ms": 16.33,
+  "bytes": 114523,
+  "fold1_acc": 0.7125,
+  "argmax_agree_with_fp32": 0.955
+ },
+ "cnn_onnx_int8_static": {
+  "p50_ms": 2.26,
+  "p95_ms": 3.1,
+  "bytes": 120415,
+  "fold1_acc": 0.7125,
+  "argmax_agree_with_fp32": 0.985
+ },
+ "logmel_only": {
+  "p50_ms": 1.41,
+  "p95_ms": 1.92
+ },
+ "clap_audio_cpu": {
+  "p50_ms": 167.28,
+  "p95_ms": 185.25,
+  "params": 28190872
+ },
+ "note": "CPU 1스레드, 5초 클립, 전처리 포함 종단 지연, 클립 50개(예열 3 제외)"
+}

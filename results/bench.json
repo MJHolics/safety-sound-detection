@@ -1,0 +1,822 @@
+{
+ "n": 2000,
+ "safety_classes": [
+  "glass_breaking",
+  "siren",
+  "crackling_fire",
+  "clock_alarm",
+  "car_horn"
+ ],
+ "conditions": [
+  "clean",
+  "synth20",
+  "synth10",
+  "synth0",
+  "machine20",
+  "machine10",
+  "machine0"
+ ],
+ "models": {
+  "mfcc_lr": {
+   "clean": {
+    "acc": 0.4375,
+    "acc_fold_sd": 0.0153,
+    "safety_recall": 0.565,
+    "safety_false_alarm": 0.0378,
+    "safety_missed": 87,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.7,
+     "siren": 0.425,
+     "crackling_fire": 0.675,
+     "clock_alarm": 0.475,
+     "car_horn": 0.55
+    }
+   },
+   "synth20": {
+    "acc": 0.3845,
+    "acc_fold_sd": 0.013,
+    "safety_recall": 0.445,
+    "safety_false_alarm": 0.0378,
+    "safety_missed": 111,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.125,
+     "siren": 0.5,
+     "crackling_fire": 0.7,
+     "clock_alarm": 0.375,
+     "car_horn": 0.525
+    }
+   },
+   "synth10": {
+    "acc": 0.3495,
+    "acc_fold_sd": 0.0144,
+    "safety_recall": 0.46,
+    "safety_false_alarm": 0.0339,
+    "safety_missed": 108,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.125,
+     "siren": 0.475,
+     "crackling_fire": 0.775,
+     "clock_alarm": 0.375,
+     "car_horn": 0.55
+    }
+   },
+   "synth0": {
+    "acc": 0.276,
+    "acc_fold_sd": 0.0146,
+    "safety_recall": 0.445,
+    "safety_false_alarm": 0.0533,
+    "safety_missed": 111,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.25,
+     "siren": 0.425,
+     "crackling_fire": 0.775,
+     "clock_alarm": 0.35,
+     "car_horn": 0.425
+    }
+   },
+   "machine20": {
+    "acc": 0.3325,
+    "acc_fold_sd": 0.019,
+    "safety_recall": 0.4,
+    "safety_false_alarm": 0.0511,
+    "safety_missed": 120,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.125,
+     "siren": 0.475,
+     "crackling_fire": 0.475,
+     "clock_alarm": 0.425,
+     "car_horn": 0.5
+    }
+   },
+   "machine10": {
+    "acc": 0.248,
+    "acc_fold_sd": 0.0143,
+    "safety_recall": 0.34,
+    "safety_false_alarm": 0.0528,
+    "safety_missed": 132,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.05,
+     "siren": 0.4,
+     "crackling_fire": 0.4,
+     "clock_alarm": 0.3,
+     "car_horn": 0.55
+    }
+   },
+   "machine0": {
+    "acc": 0.1315,
+    "acc_fold_sd": 0.0101,
+    "safety_recall": 0.23,
+    "safety_false_alarm": 0.0361,
+    "safety_missed": 154,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.025,
+     "siren": 0.25,
+     "crackling_fire": 0.225,
+     "clock_alarm": 0.275,
+     "car_horn": 0.375
+    }
+   }
+  },
+  "mfcc_lr_aug": {
+   "clean": {
+    "acc": 0.4295,
+    "acc_fold_sd": 0.0294,
+    "safety_recall": 0.525,
+    "safety_false_alarm": 0.045,
+    "safety_missed": 95,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.575,
+     "siren": 0.375,
+     "crackling_fire": 0.6,
+     "clock_alarm": 0.475,
+     "car_horn": 0.6
+    }
+   },
+   "synth20": {
+    "acc": 0.45,
+    "acc_fold_sd": 0.022,
+    "safety_recall": 0.585,
+    "safety_false_alarm": 0.0367,
+    "safety_missed": 83,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.75,
+     "siren": 0.375,
+     "crackling_fire": 0.6,
+     "clock_alarm": 0.6,
+     "car_horn": 0.6
+    }
+   },
+   "synth10": {
+    "acc": 0.4515,
+    "acc_fold_sd": 0.0258,
+    "safety_recall": 0.585,
+    "safety_false_alarm": 0.0378,
+    "safety_missed": 83,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.7,
+     "siren": 0.4,
+     "crackling_fire": 0.625,
+     "clock_alarm": 0.575,
+     "car_horn": 0.625
+    }
+   },
+   "synth0": {
+    "acc": 0.4215,
+    "acc_fold_sd": 0.0189,
+    "safety_recall": 0.555,
+    "safety_false_alarm": 0.0411,
+    "safety_missed": 89,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.675,
+     "siren": 0.375,
+     "crackling_fire": 0.675,
+     "clock_alarm": 0.525,
+     "car_horn": 0.525
+    }
+   },
+   "machine20": {
+    "acc": 0.352,
+    "acc_fold_sd": 0.0186,
+    "safety_recall": 0.405,
+    "safety_false_alarm": 0.0472,
+    "safety_missed": 119,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.175,
+     "siren": 0.525,
+     "crackling_fire": 0.475,
+     "clock_alarm": 0.375,
+     "car_horn": 0.475
+    }
+   },
+   "machine10": {
+    "acc": 0.269,
+    "acc_fold_sd": 0.0181,
+    "safety_recall": 0.375,
+    "safety_false_alarm": 0.0511,
+    "safety_missed": 125,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.15,
+     "siren": 0.45,
+     "crackling_fire": 0.4,
+     "clock_alarm": 0.4,
+     "car_horn": 0.475
+    }
+   },
+   "machine0": {
+    "acc": 0.1355,
+    "acc_fold_sd": 0.0068,
+    "safety_recall": 0.24,
+    "safety_false_alarm": 0.0333,
+    "safety_missed": 152,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.1,
+     "siren": 0.25,
+     "crackling_fire": 0.2,
+     "clock_alarm": 0.3,
+     "car_horn": 0.35
+    }
+   }
+  },
+  "cnn": {
+   "clean": {
+    "acc": 0.72,
+    "acc_fold_sd": 0.0214,
+    "safety_recall": 0.79,
+    "safety_false_alarm": 0.0211,
+    "safety_missed": 42,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.925,
+     "siren": 0.675,
+     "crackling_fire": 0.825,
+     "clock_alarm": 0.875,
+     "car_horn": 0.65
+    }
+   },
+   "synth20": {
+    "acc": 0.6445,
+    "acc_fold_sd": 0.034,
+    "safety_recall": 0.59,
+    "safety_false_alarm": 0.0267,
+    "safety_missed": 82,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.25,
+     "siren": 0.625,
+     "crackling_fire": 0.825,
+     "clock_alarm": 0.725,
+     "car_horn": 0.525
+    }
+   },
+   "synth10": {
+    "acc": 0.5485,
+    "acc_fold_sd": 0.0364,
+    "safety_recall": 0.56,
+    "safety_false_alarm": 0.0478,
+    "safety_missed": 88,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.375,
+     "siren": 0.5,
+     "crackling_fire": 0.85,
+     "clock_alarm": 0.575,
+     "car_horn": 0.5
+    }
+   },
+   "synth0": {
+    "acc": 0.351,
+    "acc_fold_sd": 0.0366,
+    "safety_recall": 0.51,
+    "safety_false_alarm": 0.0994,
+    "safety_missed": 98,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.475,
+     "siren": 0.475,
+     "crackling_fire": 0.875,
+     "clock_alarm": 0.45,
+     "car_horn": 0.275
+    }
+   },
+   "machine20": {
+    "acc": 0.5995,
+    "acc_fold_sd": 0.0306,
+    "safety_recall": 0.6,
+    "safety_false_alarm": 0.035,
+    "safety_missed": 80,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.2,
+     "siren": 0.625,
+     "crackling_fire": 0.8,
+     "clock_alarm": 0.825,
+     "car_horn": 0.55
+    }
+   },
+   "machine10": {
+    "acc": 0.448,
+    "acc_fold_sd": 0.0258,
+    "safety_recall": 0.49,
+    "safety_false_alarm": 0.05,
+    "safety_missed": 102,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.1,
+     "siren": 0.525,
+     "crackling_fire": 0.65,
+     "clock_alarm": 0.675,
+     "car_horn": 0.5
+    }
+   },
+   "machine0": {
+    "acc": 0.215,
+    "acc_fold_sd": 0.0196,
+    "safety_recall": 0.27,
+    "safety_false_alarm": 0.0428,
+    "safety_missed": 146,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.025,
+     "siren": 0.4,
+     "crackling_fire": 0.25,
+     "clock_alarm": 0.425,
+     "car_horn": 0.25
+    }
+   }
+  },
+  "cnn_aug": {
+   "clean": {
+    "acc": 0.723,
+    "acc_fold_sd": 0.0163,
+    "safety_recall": 0.81,
+    "safety_false_alarm": 0.0222,
+    "safety_missed": 38,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.925,
+     "siren": 0.75,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.925,
+     "car_horn": 0.7
+    }
+   },
+   "synth20": {
+    "acc": 0.7225,
+    "acc_fold_sd": 0.0203,
+    "safety_recall": 0.81,
+    "safety_false_alarm": 0.0228,
+    "safety_missed": 38,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.925,
+     "siren": 0.775,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.925,
+     "car_horn": 0.675
+    }
+   },
+   "synth10": {
+    "acc": 0.7225,
+    "acc_fold_sd": 0.0192,
+    "safety_recall": 0.77,
+    "safety_false_alarm": 0.0228,
+    "safety_missed": 46,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.9,
+     "siren": 0.725,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.875,
+     "car_horn": 0.6
+    }
+   },
+   "synth0": {
+    "acc": 0.6855,
+    "acc_fold_sd": 0.0236,
+    "safety_recall": 0.75,
+    "safety_false_alarm": 0.0344,
+    "safety_missed": 50,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.825,
+     "siren": 0.75,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.85,
+     "car_horn": 0.575
+    }
+   },
+   "machine20": {
+    "acc": 0.637,
+    "acc_fold_sd": 0.0272,
+    "safety_recall": 0.7,
+    "safety_false_alarm": 0.0378,
+    "safety_missed": 60,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.325,
+     "siren": 0.775,
+     "crackling_fire": 0.8,
+     "clock_alarm": 0.9,
+     "car_horn": 0.7
+    }
+   },
+   "machine10": {
+    "acc": 0.488,
+    "acc_fold_sd": 0.0334,
+    "safety_recall": 0.56,
+    "safety_false_alarm": 0.0494,
+    "safety_missed": 88,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.125,
+     "siren": 0.675,
+     "crackling_fire": 0.65,
+     "clock_alarm": 0.8,
+     "car_horn": 0.55
+    }
+   },
+   "machine0": {
+    "acc": 0.229,
+    "acc_fold_sd": 0.0351,
+    "safety_recall": 0.275,
+    "safety_false_alarm": 0.0489,
+    "safety_missed": 145,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.0,
+     "siren": 0.425,
+     "crackling_fire": 0.275,
+     "clock_alarm": 0.475,
+     "car_horn": 0.2
+    }
+   }
+  },
+  "clap_zs": {
+   "clean": {
+    "acc": 0.9155,
+    "acc_fold_sd": 0.0081,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0022,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth20": {
+    "acc": 0.915,
+    "acc_fold_sd": 0.0117,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0044,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth10": {
+    "acc": 0.9,
+    "acc_fold_sd": 0.0198,
+    "safety_recall": 0.97,
+    "safety_false_alarm": 0.0028,
+    "safety_missed": 6,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 0.975,
+     "clock_alarm": 0.975,
+     "car_horn": 0.9
+    }
+   },
+   "synth0": {
+    "acc": 0.837,
+    "acc_fold_sd": 0.0189,
+    "safety_recall": 0.96,
+    "safety_false_alarm": 0.0061,
+    "safety_missed": 8,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 0.975,
+     "clock_alarm": 1.0,
+     "car_horn": 0.825
+    }
+   },
+   "machine20": {
+    "acc": 0.862,
+    "acc_fold_sd": 0.0144,
+    "safety_recall": 0.955,
+    "safety_false_alarm": 0.0056,
+    "safety_missed": 9,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 0.975,
+     "crackling_fire": 0.875,
+     "clock_alarm": 0.95,
+     "car_horn": 0.975
+    }
+   },
+   "machine10": {
+    "acc": 0.747,
+    "acc_fold_sd": 0.0332,
+    "safety_recall": 0.855,
+    "safety_false_alarm": 0.0094,
+    "safety_missed": 29,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.825,
+     "siren": 0.9,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.925,
+     "car_horn": 0.875
+    }
+   },
+   "machine0": {
+    "acc": 0.464,
+    "acc_fold_sd": 0.0338,
+    "safety_recall": 0.615,
+    "safety_false_alarm": 0.0106,
+    "safety_missed": 77,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.6,
+     "siren": 0.725,
+     "crackling_fire": 0.475,
+     "clock_alarm": 0.55,
+     "car_horn": 0.725
+    }
+   }
+  },
+  "clap_lr": {
+   "clean": {
+    "acc": 0.967,
+    "acc_fold_sd": 0.0075,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0006,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth20": {
+    "acc": 0.961,
+    "acc_fold_sd": 0.0092,
+    "safety_recall": 0.99,
+    "safety_false_alarm": 0.0,
+    "safety_missed": 2,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 0.975,
+     "car_horn": 0.975
+    }
+   },
+   "synth10": {
+    "acc": 0.953,
+    "acc_fold_sd": 0.0117,
+    "safety_recall": 0.985,
+    "safety_false_alarm": 0.0006,
+    "safety_missed": 3,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 0.95,
+     "car_horn": 0.975
+    }
+   },
+   "synth0": {
+    "acc": 0.8665,
+    "acc_fold_sd": 0.021,
+    "safety_recall": 0.875,
+    "safety_false_alarm": 0.0006,
+    "safety_missed": 25,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.775,
+     "siren": 0.975,
+     "crackling_fire": 0.9,
+     "clock_alarm": 0.825,
+     "car_horn": 0.9
+    }
+   },
+   "machine20": {
+    "acc": 0.915,
+    "acc_fold_sd": 0.0076,
+    "safety_recall": 0.905,
+    "safety_false_alarm": 0.0028,
+    "safety_missed": 19,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.775,
+     "siren": 0.975,
+     "crackling_fire": 0.85,
+     "clock_alarm": 0.95,
+     "car_horn": 0.975
+    }
+   },
+   "machine10": {
+    "acc": 0.781,
+    "acc_fold_sd": 0.0252,
+    "safety_recall": 0.78,
+    "safety_false_alarm": 0.0022,
+    "safety_missed": 44,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.55,
+     "siren": 0.9,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.75,
+     "car_horn": 0.95
+    }
+   },
+   "machine0": {
+    "acc": 0.4635,
+    "acc_fold_sd": 0.0368,
+    "safety_recall": 0.485,
+    "safety_false_alarm": 0.0044,
+    "safety_missed": 103,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.4,
+     "siren": 0.7,
+     "crackling_fire": 0.425,
+     "clock_alarm": 0.25,
+     "car_horn": 0.65
+    }
+   }
+  },
+  "clap_lr_aug": {
+   "clean": {
+    "acc": 0.965,
+    "acc_fold_sd": 0.0063,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0006,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth20": {
+    "acc": 0.9595,
+    "acc_fold_sd": 0.0046,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0017,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth10": {
+    "acc": 0.9605,
+    "acc_fold_sd": 0.0058,
+    "safety_recall": 0.995,
+    "safety_false_alarm": 0.0028,
+    "safety_missed": 1,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 1.0,
+     "clock_alarm": 1.0,
+     "car_horn": 0.975
+    }
+   },
+   "synth0": {
+    "acc": 0.94,
+    "acc_fold_sd": 0.0065,
+    "safety_recall": 0.965,
+    "safety_false_alarm": 0.0022,
+    "safety_missed": 7,
+    "per_safety_class_recall": {
+     "glass_breaking": 1.0,
+     "siren": 1.0,
+     "crackling_fire": 0.95,
+     "clock_alarm": 0.975,
+     "car_horn": 0.9
+    }
+   },
+   "machine20": {
+    "acc": 0.9165,
+    "acc_fold_sd": 0.0123,
+    "safety_recall": 0.915,
+    "safety_false_alarm": 0.0022,
+    "safety_missed": 17,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.825,
+     "siren": 0.975,
+     "crackling_fire": 0.85,
+     "clock_alarm": 0.975,
+     "car_horn": 0.95
+    }
+   },
+   "machine10": {
+    "acc": 0.793,
+    "acc_fold_sd": 0.0223,
+    "safety_recall": 0.815,
+    "safety_false_alarm": 0.0039,
+    "safety_missed": 37,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.7,
+     "siren": 0.875,
+     "crackling_fire": 0.75,
+     "clock_alarm": 0.875,
+     "car_horn": 0.875
+    }
+   },
+   "machine0": {
+    "acc": 0.5065,
+    "acc_fold_sd": 0.0288,
+    "safety_recall": 0.525,
+    "safety_false_alarm": 0.0067,
+    "safety_missed": 95,
+    "per_safety_class_recall": {
+     "glass_breaking": 0.425,
+     "siren": 0.65,
+     "crackling_fire": 0.45,
+     "clock_alarm": 0.55,
+     "car_horn": 0.55
+    }
+   }
+  }
+ },
+ "mcnemar": {
+  "mfcc_lr|cnn|clean": {
+   "only_a": 130,
+   "only_b": 695,
+   "p": 5.060433277314357e-94
+  },
+  "mfcc_lr|cnn|machine10": {
+   "only_a": 146,
+   "only_b": 546,
+   "p": 3.4935617879665585e-55
+  },
+  "mfcc_lr|cnn|machine0": {
+   "only_a": 106,
+   "only_b": 273,
+   "p": 4.260635527156922e-18
+  },
+  "cnn|cnn_aug|clean": {
+   "only_a": 96,
+   "only_b": 102,
+   "p": 0.722437692629861
+  },
+  "cnn|cnn_aug|machine10": {
+   "only_a": 75,
+   "only_b": 155,
+   "p": 1.4353161386899775e-07
+  },
+  "cnn|cnn_aug|machine0": {
+   "only_a": 63,
+   "only_b": 91,
+   "p": 0.02924556857196784
+  },
+  "cnn|clap_lr|clean": {
+   "only_a": 15,
+   "only_b": 509,
+   "p": 1.445044086106239e-129
+  },
+  "cnn|clap_lr|machine10": {
+   "only_a": 96,
+   "only_b": 762,
+   "p": 1.9729326178032784e-129
+  },
+  "cnn|clap_lr|machine0": {
+   "only_a": 108,
+   "only_b": 605,
+   "p": 1.127856923081053e-84
+  },
+  "clap_zs|clap_lr|clean": {
+   "only_a": 23,
+   "only_b": 126,
+   "p": 2.1205229688026993e-18
+  },
+  "clap_zs|clap_lr|machine10": {
+   "only_a": 134,
+   "only_b": 202,
+   "p": 0.00024587548472278134
+  },
+  "clap_zs|clap_lr|machine0": {
+   "only_a": 189,
+   "only_b": 188,
+   "p": 1.0
+  },
+  "clap_lr|clap_lr_aug|clean": {
+   "only_a": 19,
+   "only_b": 15,
+   "p": 0.6075913612730801
+  },
+  "clap_lr|clap_lr_aug|machine10": {
+   "only_a": 62,
+   "only_b": 86,
+   "p": 0.05831193147429581
+  },
+  "clap_lr|clap_lr_aug|machine0": {
+   "only_a": 60,
+   "only_b": 146,
+   "p": 1.8625246712924887e-09
+  },
+  "mfcc_lr|mfcc_lr_aug|clean": {
+   "only_a": 130,
+   "only_b": 114,
+   "p": 0.336929779068743
+  },
+  "mfcc_lr|mfcc_lr_aug|machine10": {
+   "only_a": 88,
+   "only_b": 130,
+   "p": 0.005367918801283635
+  },
+  "mfcc_lr|mfcc_lr_aug|machine0": {
+   "only_a": 56,
+   "only_b": 64,
+   "p": 0.5229909838899945
+  }
+ },
+ "train_seconds": {
+  "mfcc_lr": 7.3,
+  "mfcc_lr_aug": 0.0,
+  "cnn": 41.8,
+  "cnn_aug": 68.3,
+  "clap_zs": 0.0,
+  "clap_lr": 0.0,
+  "clap_lr_aug": 0.0
+ }
+}
